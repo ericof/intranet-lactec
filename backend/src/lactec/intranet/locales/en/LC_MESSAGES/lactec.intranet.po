@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-13 12:38+0000\n"
+"POT-Creation-Date: 2026-01-13 20:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,26 +14,182 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: lactec.intranet\n"
 
-#: lactec/intranet/profiles.zcml:22
+#: lactec/intranet/vocabularies/estados.py:9
+msgid "Acre"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:10
+msgid "Alagoas"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:11
+msgid "Amapá"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:12
+msgid "Amazonas"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:13
+msgid "Bahia"
+msgstr ""
+
+#: lactec/intranet/content/area.py:67
+msgid "CEP"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:14
+msgid "Ceará"
+msgstr ""
+
+#: lactec/intranet/content/area.py:57
+msgid "Cidade"
+msgstr ""
+
+#: lactec/intranet/content/area.py:51
+msgid "Complemento"
+msgstr ""
+
+#: lactec/intranet/content/area.py:15
+msgid "Contato"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:23
 msgid "Create example content to showcase the new website"
 msgstr ""
 
-#: lactec/intranet/profiles.zcml:22
+#: lactec/intranet/vocabularies/estados.py:15
+msgid "Distrito Federal"
+msgstr ""
+
+#: lactec/intranet/content/area.py:22
+msgid "Email"
+msgstr ""
+
+#: lactec/intranet/content/area.py:36
+msgid "Endereço"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:16
+msgid "Espírito Santo"
+msgstr ""
+
+#: lactec/intranet/content/area.py:62
+msgid "Estado"
+msgstr ""
+
+#: lactec/intranet/content/area.py:52
+msgid "Ex. Anexo, Sala"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:17
+msgid "Goiás"
+msgstr ""
+
+#: lactec/intranet/content/area.py:29
+msgid "Informe o telefone de contato"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:23
 msgid "Intranet Lactec: Example content"
 msgstr ""
 
-#: lactec/intranet/profiles.zcml:13
+#: lactec/intranet/profiles.zcml:14
 msgid "Intranet Lactec: Install"
 msgstr ""
 
-#: lactec/intranet/profiles.zcml:30
+#: lactec/intranet/profiles.zcml:31
 msgid "Intranet Lactec: Uninstall"
 msgstr ""
 
-#: lactec/intranet/profiles.zcml:13
+#: lactec/intranet/vocabularies/estados.py:18
+msgid "Maranhão"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:19
+msgid "Mato Grosso"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:20
+msgid "Mato Grosso do Sul"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:21
+msgid "Minas Gerais"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:14
 msgid "Package to configure a new Intranet Lactec site"
 msgstr ""
 
-#: lactec/intranet/profiles.zcml:30
+#: lactec/intranet/vocabularies/estados.py:24
+msgid "Paraná"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:23
+msgid "Paraíba"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:22
+msgid "Pará"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:25
+msgid "Pernambuco"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:26
+msgid "Piauí"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:28
+msgid "Rio Grande do Norte"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:29
+msgid "Rio Grande do Sul"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:27
+msgid "Rio de Janeiro"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:30
+msgid "Rondônia"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:31
+msgid "Roraima"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:32
+msgid "Santa Catarina"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:34
+msgid "Sergipe"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:33
+msgid "São Paulo"
+msgstr ""
+
+#: lactec/intranet/content/area.py:28
+msgid "Telefone"
+msgstr ""
+
+#: lactec/intranet/vocabularies/estados.py:35
+msgid "Tocantins"
+msgstr ""
+
+#: lactec/intranet/profiles/default/types/Area.xml
+msgid "Uma Área dentro da Lactec"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:31
 msgid "Uninstall Intranet Lactec setup."
+msgstr ""
+
+#: lactec/intranet/profiles/default/types/Area.xml
+msgid "Área"
 msgstr ""
