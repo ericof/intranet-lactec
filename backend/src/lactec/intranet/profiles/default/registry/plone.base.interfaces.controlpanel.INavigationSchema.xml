@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records interface="plone.base.interfaces.controlpanel.INavigationSchema"
+           prefix="plone"
+  >
+    <value key="navigation_depth">4</value>
+  </records>
+</registry>

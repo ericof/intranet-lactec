@@ -1,0 +1,37 @@
+[repository]
+name = "intranet-lactec"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "lactec.intranet"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+base_package = "Products.CMFPlone"
+publish = false
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "volto-lactec-intranet"
+path = "frontend/packages/volto-lactec-intranet"
+changelog = "frontend/packages/volto-lactec-intranet/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-lactec-intranet/towncrier.toml"
+base_package = "@plone/volto"
+publish = false
+
+[cookieplone]
+template = "project"
+template_version = "060fbeb6a3c9ff8ebfd8cc1e9f4bc61d0feefcf1"
+generated_date = "2026-01-12 19:54:52"

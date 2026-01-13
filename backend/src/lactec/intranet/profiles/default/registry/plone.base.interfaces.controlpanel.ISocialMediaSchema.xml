@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records interface="plone.base.interfaces.controlpanel.ISocialMediaSchema"
+           prefix="plone"
+  >
+    <value key="twitter_username">plone</value>
+  </records>
+</registry>

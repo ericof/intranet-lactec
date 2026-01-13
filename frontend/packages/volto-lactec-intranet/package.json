@@ -1,0 +1,87 @@
+{
+  "name": "volto-lactec-intranet",
+  "version": "1.0.0-alpha.0",
+  "description": "Intranet utilizando o Plone 6",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "keywords": [
+    "volto-addon",
+    "volto",
+    "plone",
+    "react"
+  ],
+  "author": "Érico Andrei",
+  "homepage": "https://github.com/ericof/intranet-lactec#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ericof/intranet-lactec"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
+    "dry-release": "release-it --dry-run",
+    "release": "release-it",
+    "release-major-alpha": "release-it major --preRelease=alpha",
+    "release-alpha": "release-it --preRelease=alpha"
+  },
+  "addons": [
+    "@eeacms/volto-accordion-block",
+    "@kitconcept/volto-button-block",
+    "@kitconcept/volto-highlight-block",
+    "@kitconcept/volto-heading-block",
+    "@kitconcept/volto-separator-block",
+    "@kitconcept/volto-social-blocks",
+    "@kitconcept/volto-carousel-block",
+    "@kitconcept/volto-slider-block",
+    "@kitconcept/volto-logos-block",
+    "@kitconcept/volto-introduction-block",
+    "@plonegovbr/volto-code-block",
+    "@plonegovbr/volto-social-media",
+    "@kitconcept/volto-bm3-compat",
+    "@plone-collective/volto-image-editor",
+    "@eeacms/volto-statistic-block",
+    "volto-countdown-block",
+    "@kitconcept/volto-light-theme"
+  ],
+  "theme": "@kitconcept/volto-light-theme",
+  "dependencies": {
+    "@plone/components": "workspace:*",
+    "@eeacms/volto-accordion-block": "^10.4.6",
+    "@kitconcept/volto-banner-block": "^1.1.0",
+    "@kitconcept/volto-bm3-compat": "^1.0.0-alpha.1",
+    "@kitconcept/volto-button-block": "^5.0.0-alpha.0",
+    "@kitconcept/volto-carousel-block": "^3.0.0-alpha.0",
+    "@kitconcept/volto-heading-block": "^2.5.0",
+    "@kitconcept/volto-highlight-block": "^4.5.0",
+    "@kitconcept/volto-introduction-block": "^1.1.0",
+    "@kitconcept/volto-logos-block": "^4.0.0-alpha.0",
+    "@kitconcept/volto-separator-block": "^5.0.0-alpha.0",
+    "@kitconcept/volto-slider-block": "^7.0.0-alpha.0",
+    "@plonegovbr/volto-social-media": "^3.0.0-alpha.0",
+    "@kitconcept/volto-social-blocks": "1.0.0-alpha.8",
+    "@kitconcept/volto-light-theme": "8.0.0-alpha.9",
+    "@plonegovbr/volto-code-block": "3.0.0",
+    "@eeacms/volto-statistic-block": "^6.0.1",
+    "volto-countdown-block": "^0.1.2",
+    "@plone-collective/volto-image-editor": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "classnames": "^2.5.1",
+    "react-intl": "^3.12.1"
+  },
+  "devDependencies": {
+    "@plone/registry": "workspace:*",
+    "@plone/scripts": "workspace:*",
+    "@plone/types": "workspace:*",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.7.3",
+    "@testing-library/react": "^16.2.0",
+    "release-it": "^19.0.5",
+    "vitest": "^3.1.2"
+  }
+}
