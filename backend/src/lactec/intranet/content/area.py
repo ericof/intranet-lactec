@@ -58,8 +58,9 @@ class IArea(model.Schema):
         required=False,
         default="",
     )
-    estado = schema.TextLine(
+    estado = schema.Choice(
         title=_("Estado"),
+        vocabulary="lactec.intranet.vocabulary.estados",
         required=False,
     )
     cep = schema.TextLine(

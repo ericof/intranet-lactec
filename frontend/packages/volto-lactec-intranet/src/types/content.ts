@@ -8,6 +8,9 @@ export interface Area extends Content {
   endereco?: string;
   complemento?: string;
   cidade?: string;
-  estado?: string;
+  estado?: {
+    token: string;
+    title?: string;
+  };
   cep?: string;
 }
