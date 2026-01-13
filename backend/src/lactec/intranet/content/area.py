@@ -1,4 +1,5 @@
 from lactec.intranet import _
+from lactec.intranet.utils import validadores
 from plone.dexterity.content import Container
 from plone.schema.email import Email
 from plone.supermodel import model
@@ -20,12 +21,14 @@ class IArea(model.Schema):
     email = Email(
         title=_("Email"),
         required=True,
+        constraint=validadores.is_valid_email,
     )
 
     telefone = schema.TextLine(
         title=_("Telefone"),
         description=_("Informe o telefone de contato"),
         required=False,
+        constraint=validadores.is_valid_telefone,
     )
 
 
