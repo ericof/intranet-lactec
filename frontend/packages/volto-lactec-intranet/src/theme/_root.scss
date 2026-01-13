@@ -1,0 +1,37 @@
+:root {
+  // Layout
+  --narrow-container-width: 1024px;
+  --default-container-width: 1024px;
+  --layout-container-width: 1440px;
+
+  // Colors
+  --primary-color: #ffffff;
+  --primary-foreground-color: #002957;
+  --secondary-color: #ede1ce;
+  --secondary-foreground-color: #002957;
+  --accent-color: #0083be;
+  --accent-foreground-color: #ffffff;
+
+  // Links
+  --link-color: rgb(100, 100, 100);
+  --link-color-hover: rgb(0, 131, 190);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: solid;
+
+  &:hover {
+    color: var(--link-color-hover);
+    text-decoration: solid;
+  }
+}
+
+.contato {
+  padding: $spacing-small;
+  border: 2px solid;
+  border-radius: 5px;
+  .label {
+    @include body-text-bold();
+  }
+}
