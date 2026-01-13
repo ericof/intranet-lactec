@@ -4,6 +4,7 @@ import { Container } from '@plone/components';
 import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
 import type { Area } from 'volto-lactec-intranet/types/content';
 import ContactInfo from 'volto-lactec-intranet/components/ContactInfo/ContactInfo';
+import EnderecoInfo from 'volto-lactec-intranet/components/EnderecoInfo/EnderecoInfo';
 
 interface AreaViewProps {
   content: Area;
@@ -21,6 +22,7 @@ const AreaView: React.FC<AreaViewProps> = (props) => {
     <Container id="page-document" className="view-wrapper area-view">
       <RenderBlocks {...props} path={path} />
       <ContactInfo content={content} />
+      <EnderecoInfo content={content} />
     </Container>
   );
 };

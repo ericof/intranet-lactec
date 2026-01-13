@@ -35,3 +35,10 @@ a {
     @include body-text-bold();
   }
 }
+
+.endereco-info {
+  padding: $spacing-small;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-top: $spacing-small;
+}
