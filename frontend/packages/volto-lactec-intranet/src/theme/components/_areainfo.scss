@@ -3,8 +3,8 @@
   align-items: center;
   padding: $spacing-small;
   margin: $spacing-small 0;
-  background-color: var(--secondary-color);
-  color: var(--primary-color-foreground);
+  background-color: var(--theme-high-contrast-color, var(--secondary-color));
+  color: var(--theme-foreground-color, var(--primary-color-foreground));
   gap: 0.1rem;
   .icon {
     max-width: 20% !important;
