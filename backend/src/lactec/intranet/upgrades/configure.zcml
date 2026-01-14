@@ -80,6 +80,17 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="lactec.intranet:default"
+      source="20260114003"
+      destination="20260114004"
+      >
+    <genericsetup:upgradeDepends
+        title="Adiciona filtros por Área e Cargo"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
+
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>
