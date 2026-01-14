@@ -1,0 +1,26 @@
+.areaInfo {
+  display: flex;
+  align-items: center;
+  padding: $spacing-small;
+  margin: $spacing-small 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color-foreground);
+  gap: 0.1rem;
+  .icon {
+    max-width: 20% !important;
+  }
+  .info {
+    display: flex;
+    width: 80% !important;
+    flex-direction: column;
+    align-items: flex-start;
+    .title {
+      margin: 0 0 $spacing-small 0;
+      @include text-heading-h3();
+    }
+    .description {
+      margin-bottom: 0;
+      @include body-text();
+    }
+  }
+}
