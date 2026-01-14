@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from '@plone/components';
-import type { Area } from 'volto-lactec-intranet/types/content';
+import type { Endereco } from 'volto-lactec-intranet/types/content';
 
 interface EnderecoInfoProps {
-  content: Area;
+  content: Endereco;
 }
 
 const EnderecoInfo: React.FC<EnderecoInfoProps> = ({ content }) => {

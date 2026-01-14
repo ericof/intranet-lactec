@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from '@plone/components';
-import type { Area } from 'volto-lactec-intranet/types/content';
+import type { Contato } from 'volto-lactec-intranet/types/content';
 
 interface ContactInfoProps {
-  content: Area;
+  content: Contato;
 }
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ content }) => {
