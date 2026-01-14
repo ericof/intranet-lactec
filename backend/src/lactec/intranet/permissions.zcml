@@ -10,6 +10,10 @@
         id="lactec.intranet.area.add"
         title="lactec.intranet: Add Area"
         />
+    <permission
+        id="lactec.intranet.pessoa.add"
+        title="lactec.intranet: Add Pessoa"
+        />
 
   </configure>
 

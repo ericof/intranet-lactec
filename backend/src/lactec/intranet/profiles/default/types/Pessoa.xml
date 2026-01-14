@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Dexterity FTI"
+        name="Pessoa"
+        i18n:domain="lactec.intranet"
+>
+
+  <!-- Basic properties -->
+  <property name="title"
+            i18n:translate=""
+  >Pessoa</property>
+  <property name="description"
+            i18n:translate=""
+  >Uma pessoa que trabalhe na Lactec</property>
+
+  <property name="allow_discussion">False</property>
+  <property name="factory">Pessoa</property>
+
+  <!-- Hierarchy control -->
+  <property name="filter_content_types">False</property>
+  <property name="allowed_content_types" />
+  <property name="global_allow">True</property>
+
+  <!-- Schema, class and security -->
+  <property name="add_permission">lactec.intranet.pessoa.add</property>
+  <property name="klass">lactec.intranet.content.pessoa.Pessoa</property>
+  <property name="schema">lactec.intranet.content.pessoa.IPessoa</property>
+
+  <!-- Enabled behaviors -->
+  <property name="behaviors"
+            purge="true"
+  >
+    <element value="plone.basic" />
+    <element value="plone.namefromtitle" />
+    <element value="plone.leadimage" />
+    <element value="lactec.intranet.behavior.contato" />
+    <element value="lactec.intranet.behavior.endereco" />
+    <element value="plone.shortname" />
+    <element value="plone.excludefromnavigation" />
+    <element value="plone.constraintypes" />
+    <element value="plone.versioning" />
+  </property>
+
+</object>
