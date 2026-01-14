@@ -18,4 +18,9 @@ export interface Contato {
 
 export interface Area extends Content, Endereco, Contato {}
 
-export interface Pessoa extends Content, Endereco, Contato {}
+export interface Pessoa extends Content, Endereco, Contato {
+  cargo?: {
+    token: string;
+    title: string;
+  };
+}

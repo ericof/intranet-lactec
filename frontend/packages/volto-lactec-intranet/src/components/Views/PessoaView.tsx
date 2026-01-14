@@ -27,6 +27,11 @@ const PessoaView: React.FC<PessoaViewProps> = (props) => {
           />
         </Container>
       )}
+      {content.cargo && (
+        <span className={`cargo cargo-${content.cargo.token}`}>
+          {content.cargo.title}
+        </span>
+      )}
       <h1 className="documentFirstHeading">{content.title}</h1>
       {content.description && (
         <p className="documentDescription">{content.description}</p>
