@@ -1,4 +1,5 @@
 import type { Content } from '@plone/types';
+import type { RelatedItem } from '@plone/types';
 
 export interface Endereco {
   endereco?: string;
@@ -23,4 +24,5 @@ export interface Pessoa extends Content, Endereco, Contato {
     token: string;
     title: string;
   };
+  area?: RelatedItem;
 }
