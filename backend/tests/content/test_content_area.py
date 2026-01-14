@@ -41,13 +41,15 @@ class TestArea:
     @pytest.mark.parametrize(
         "behavior",
         [
+            "lactec.intranet.behavior.contato",
+            "lactec.intranet.behavior.endereco",
             "plone.basic",
+            "plone.constraintypes",
+            "plone.excludefromnavigation",
             "plone.namefromtitle",
             "plone.shortname",
-            "plone.excludefromnavigation",
             "plone.versioning",
             "volto.blocks",
-            "plone.constraintypes",
             "volto.preview_image",
         ],
     )

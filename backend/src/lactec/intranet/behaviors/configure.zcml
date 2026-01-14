@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="lactec.intranet"
+    >
+
+  <!-- Comportamento de Informações de Contato -->
+  <plone:behavior
+      name="lactec.intranet.behavior.contato"
+      title="Informações de Contato"
+      description="Adiciona campos de informações de contato."
+      provides=".contato.IContato"
+      />
+
+  <!-- Comportamento de Informações de Endereço -->
+  <plone:behavior
+      name="lactec.intranet.behavior.endereco"
+      title="Informações de Endereço"
+      description="Adiciona campos de informações de endereço."
+      provides=".endereco.IEndereco"
+      />
+
+</configure>

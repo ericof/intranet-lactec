@@ -28,10 +28,12 @@
 
   <!-- Enabled behaviors -->
   <property name="behaviors"
-            purge="false"
+            purge="true"
   >
     <element value="plone.basic" />
     <element value="plone.namefromtitle" />
+    <element value="lactec.intranet.behavior.contato" />
+    <element value="lactec.intranet.behavior.endereco" />
     <element value="plone.shortname" />
     <element value="plone.excludefromnavigation" />
     <element value="volto.blocks" />
