@@ -95,3 +95,18 @@ class TestArea:
             payload["description"] = ""
             area = api.content.create(container=container, **payload)
         assert area.exclude_from_nav is True
+
+    def test_subscriber_added_create_group(self, area_payload):
+        container = self.portal
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=container,
+                **area_payload,
+            )
+        uid = api.content.get_uuid(area)
+        g_id = f"{uid}-editores"
+        grupo = api.group.get(g_id)
+        assert grupo is not None
+        assert grupo.getProperty("title") == f"Área {area.title}: Editores"
+        local_roles = api.group.get_roles(group=grupo, obj=area)
+        assert "Editor" in local_roles
