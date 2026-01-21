@@ -110,3 +110,29 @@ class TestArea:
         assert grupo.getProperty("title") == f"Área {area.title}: Editores"
         local_roles = api.group.get_roles(group=grupo, obj=area)
         assert "Editor" in local_roles
+
+    def test_subscriber_modified(self, area_payload):
+        from zope.event import notify
+        from zope.lifecycleevent import ObjectModifiedEvent
+
+        # Criamos normalmente a área, com uma descrição inicial
+        container = self.portal
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=container,
+                **area_payload,
+            )
+        # Descrição inicial não vazia, exclude_from_nav deve ser False
+        assert area.exclude_from_nav is False
+        # Agora modificamos a descrição para vazia
+        area.description = ""
+        # Disparamos o evento de modificação
+        notify(ObjectModifiedEvent(area))
+        # Agora exclude_from_nav deve ser True
+        assert area.exclude_from_nav is True
+        # Modificamos a descrição para um valor não vazio
+        area.description = "Nova descrição da área"
+        # Disparamos o evento de modificação novamente
+        notify(ObjectModifiedEvent(area))
+        # Agora exclude_from_nav deve ser False novamente
+        assert area.exclude_from_nav is False

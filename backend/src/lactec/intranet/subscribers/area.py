@@ -3,6 +3,7 @@ from lactec.intranet.content.area import Area
 from plone import api
 from Products.PlonePAS.tools.groupdata import GroupData
 from zope.lifecycleevent import ObjectAddedEvent
+from zope.lifecycleevent import ObjectModifiedEvent
 
 
 def _update_excluded_from_nav(obj: Area):
@@ -32,3 +33,8 @@ def added(obj: Area, event: ObjectAddedEvent):
     """Post creation handler for Area."""
     _update_excluded_from_nav(obj)
     _cria_grupo_usuarios(obj)
+
+
+def modified(obj: Area, event: ObjectModifiedEvent):
+    """Post modification handler for Area."""
+    _update_excluded_from_nav(obj)
