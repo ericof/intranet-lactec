@@ -11,4 +11,37 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "Local"
+#: components/Blocks/Clima/schema
+msgid "Local"
+msgstr ""
 
+#. Default: "Medida"
+#: components/Blocks/Clima/schema
+msgid "Medida"
+msgstr ""
+
+#. Default: "Nascer do Sol"
+#: components/Blocks/Clima/schema
+msgid "Nascer do Sol"
+msgstr ""
+
+#. Default: "Nome do local a ser exibido"
+#: components/Blocks/Clima/schema
+msgid "Nome do local a ser exibido"
+msgstr ""
+
+#. Default: "O que será exibido no bloco"
+#: components/Blocks/Clima/schema
+msgid "O que será exibido no bloco"
+msgstr ""
+
+#. Default: "Por do Sol"
+#: components/Blocks/Clima/schema
+msgid "Por do Sol"
+msgstr ""
+
+#. Default: "Previsão do Tempo"
+#: components/Blocks/Clima/schema
+msgid "Previsão do Tempo"
+msgstr ""

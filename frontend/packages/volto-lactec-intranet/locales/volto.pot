@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2026-01-13T12:38:42.880Z\n"
+"POT-Creation-Date: 2026-01-21T17:36:13.837Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -13,4 +13,37 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#. Default: "Local"
+#: components/Blocks/Clima/schema
+msgid "Local"
+msgstr ""
 
+#. Default: "Medida"
+#: components/Blocks/Clima/schema
+msgid "Medida"
+msgstr ""
+
+#. Default: "Nascer do Sol"
+#: components/Blocks/Clima/schema
+msgid "Nascer do Sol"
+msgstr ""
+
+#. Default: "Nome do local a ser exibido"
+#: components/Blocks/Clima/schema
+msgid "Nome do local a ser exibido"
+msgstr ""
+
+#. Default: "O que será exibido no bloco"
+#: components/Blocks/Clima/schema
+msgid "O que será exibido no bloco"
+msgstr ""
+
+#. Default: "Por do Sol"
+#: components/Blocks/Clima/schema
+msgid "Por do Sol"
+msgstr ""
+
+#. Default: "Previsão do Tempo"
+#: components/Blocks/Clima/schema
+msgid "Previsão do Tempo"
+msgstr ""

@@ -18,4 +18,37 @@ msgstr ""
 "X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
 "X-Generator: Poedit 2.2.1\n"
 
+#. Default: "Local"
+#: components/Blocks/Clima/schema
+msgid "Local"
+msgstr ""
 
+#. Default: "Medida"
+#: components/Blocks/Clima/schema
+msgid "Medida"
+msgstr ""
+
+#. Default: "Nascer do Sol"
+#: components/Blocks/Clima/schema
+msgid "Nascer do Sol"
+msgstr ""
+
+#. Default: "Nome do local a ser exibido"
+#: components/Blocks/Clima/schema
+msgid "Nome do local a ser exibido"
+msgstr ""
+
+#. Default: "O que será exibido no bloco"
+#: components/Blocks/Clima/schema
+msgid "O que será exibido no bloco"
+msgstr ""
+
+#. Default: "Por do Sol"
+#: components/Blocks/Clima/schema
+msgid "Por do Sol"
+msgstr ""
+
+#. Default: "Previsão do Tempo"
+#: components/Blocks/Clima/schema
+msgid "Previsão do Tempo"
+msgstr ""
