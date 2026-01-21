@@ -67,8 +67,19 @@ def _formatar_resposta(data: dict) -> dict:
     }
 
 
-def _dados_clima(latitude: str, longitude: str, timezone: str) -> dict:
-    """Função que chama o serviço Open Meteo e retorna os dados de clima."""
+def _obtem_dados_open_meteo(params: dict[str, str]) -> dict:
+    """Realiza chamada ao serviço Open Meteo.
+
+    Esse método existe para facilitar o mock em testes.
+    """
+    # Parametros da chamada
+    response = requests.get(BASE_URL, params=params, timeout=5)
+    return response.json()
+
+
+@cache(time_30m_key)
+def dados_clima(latitude: str, longitude: str, timezone: str) -> dict:
+    """Chama o serviço Open Meteo e retorna os dados de clima."""
     # Parametros da chamada
     params = {
         "latitude": latitude,
@@ -81,13 +92,7 @@ def _dados_clima(latitude: str, longitude: str, timezone: str) -> dict:
     }
     # Realiza a requisição
     logger.info("Acesso ao OpenMeteo")
-    response = requests.get(BASE_URL, params=params, timeout=5)
+    raw_data = _obtem_dados_open_meteo(params)
     logger.info("Parseia dados recebidos")
-    data = _formatar_resposta(response.json())
+    data = _formatar_resposta(raw_data)
     return data
-
-
-@cache(time_30m_key)
-def dados_clima(latitude: str, longitude: str, timezone: str) -> dict:
-    """Chama o serviço Open Meteo e retorna os dados de clima."""
-    return _dados_clima(latitude, longitude, timezone)
