@@ -18,4 +18,11 @@
       handler=".debug.log_event"
       />
 
+
+  <!-- -*- Grupo criado -*- -->
+  <subscriber
+      for="lactec.intranet.events.IIntranetAreaGroupCreatedEvent"
+      handler=".grupo.created"
+      />
+
 </configure>

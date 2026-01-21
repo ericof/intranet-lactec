@@ -1,7 +1,9 @@
 from lactec.intranet import logger
 from lactec.intranet.content.area import Area
+from lactec.intranet.events import IntranetAreaGroupCreatedEvent
 from plone import api
 from Products.PlonePAS.tools.groupdata import GroupData
+from zope.event import notify
 from zope.lifecycleevent import ObjectAddedEvent
 from zope.lifecycleevent import ObjectModifiedEvent
 
@@ -27,6 +29,7 @@ def _cria_grupo_usuarios(obj: Area):
     logger.info(f"Criado o grupo {titulo} para a área {obj.title}")
     api.group.grant_roles(group=grupo, roles=["Editor"], obj=obj)
     logger.info(f"Grupo {titulo} recebeu papel de editor em {obj.absolute_url()}")
+    notify(IntranetAreaGroupCreatedEvent(grupo))
 
 
 def added(obj: Area, event: ObjectAddedEvent):
